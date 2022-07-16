@@ -7,7 +7,7 @@ let x = "";
 
 if (storageInput) {
     
-    window.location.href = "chillsongs.netlify.app/client"
+    window.location.href = "/client"
 }
 else {
 
