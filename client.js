@@ -175,6 +175,6 @@ if (storage) {
 
    
 } else {
-    window.location.href ="index.html";
+    window.location.href ="chillsongs.netlify.app/";
 
 }
