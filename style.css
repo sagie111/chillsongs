@@ -233,6 +233,7 @@ body {
     margin-top: 10px;
 }
 
+
 .left-position {
     position: absolute;
     left: 0;
@@ -441,7 +442,7 @@ h4 {
 
 @media screen and (max-width: 1500px) {
   
-    .left-position {
+    .left-position #settingsBtn {
         display: none;
     }
 
