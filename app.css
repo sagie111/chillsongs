@@ -167,9 +167,7 @@ body {
     
     color: white;
     font-family: 'Source Code Pro', monospace;
-    margin-left: 40px;
-    font-size: 25px;
-    width: 250px;
+    font-size: 2rem;
 }
 
 
@@ -255,8 +253,11 @@ body {
 
 
 .left-position button:hover {
-    transition: .2s ease-in;
+    background-color: #04AA6D;
+    color: #363636;
+    transition: .3s ease-in;
     transform: translateY(-5px)
+    
 }
 
 
@@ -442,6 +443,10 @@ h4 {
       transition: .2s ease-in;
       transform: translateY(-5px)
   }
+
+.backBTN111 {
+    padding: 10px;
+}
 
 
 
