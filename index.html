@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill songs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+
+<body class="bg-slate-800">
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl cursor-pointer">
+        <h1 class="h-10 inline" >✨ Chill songs</h1> 
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+  
+   
+      <li class="mx-4 my-6 md:my-0">
+        <a href="https://chillsongssite.netlify.app/blog" class="subpixel-antialiased text-lg font-medium hover:text-cyan-500 duration-500">BLOG</a>
+      </li>
+
+      <li class="mx-4 my-6 md:my-0">
+        <a href="mailto: sagedvir@protonmail.com" class="subpixel-antialiased text-lg font-medium hover:text-cyan-500 duration-500">CONTACT US</a>
+      </li>
+
+      <li class="mx-4 my-6 md:my-0">
+        <a href="https://sagied.org/" class="subpixel-antialiased text-lg font-medium hover:text-cyan-500 duration-500">ABOUT</a>
+      </li>
+
+      <button onclick="location.href='https://chillsongs.netlify.app/'" type="button" class="font-semibold mx-4 my-6 md:my-0 bg-violet-500 text-white duration-500 px-6 py-2 mx-4 duration-500 hover:ring hover:ring-violet-300 rounded">
+        GETTING STARTED
+      </button>
+    </ul>
+  </nav>
+
+
+
+
+  <div class="title" id="title">
+    <h1 class="animate__animated animate__backInDown">listening to some music in the background while <a class="underline decoration-sky-500 font-bold">working</a> <a class="underline decoration-pink-500 font-bold">,programing</a> <a class="underline decoration-indigo-500 font-bold"> ,studying etc... </a></h1>
+  </div>
+
+
+  <div class="btn" id="btn">
+    <button onclick="location.href='https://chillsongs.netlify.app/'" type="button" class="bg-violet-500 duration-500 hover:ring hover:ring-violet-300 rounded">Getting started</button>
+  </div>
+
+  <div class="whyMe" id="whyMe">
+      <h1>Why using Chill songs?</h1>
+
+
+      <div class="dad">
+        <div class="card">
+          <img src="images/design.svg" draggable="false">
+          <p>Chill songs has very cool animation, it will look amazing in your screen.</p>
+
+        </div>
+
+        <div class="card">
+          <img src="images/everywhere.svg" draggable="false">
+          <p>You can listen to our music <a class="font-bold">anywhere</a> while working ,programing ,learning ,exercising etc...</p>
+
+        </div>
+
+        <div class="card">
+          <img src="images/music.svg" draggable="false">
+          <p>Our music is of excellent quality and easy to listen to</p>
+
+        </div>
+        
+      </div>
+</div>
+
+
+<div class="why2" id="why2">
+  <h1>Why I need music while working?</h1>
+  <p>When you work hard, you always need your peace. We believe that with our music you will always be calm and chill to work better and even smarter.</p>
+</div>
+
+
+<div class="why3" id="why3">
+  <h1>Which music is it?</h1>
+  <p>Our music is hip hop radio/beats to relax and make you happier 😇</p>
+</div>
+
+
+<footer id="footer">
+  <p class="copyright">© CHILL SONGS 2021-2022 | Made with ❤️ by<a class="font-bold" href="https://sagied.org/"> Sage</a></p>
+</footer>
+
+
+  <script>
+    function Menu(e){
+      let title = document.getElementById('title');
+      let whyMe = document.getElementById('whyMe');
+      let why2 = document.getElementById('why2');
+      let why3 = document.getElementById('why3');
+
+      let footer = document.getElementById('footer');
+      let btn = document.getElementById('btn');
+      let list = document.querySelector('ul');
+
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[70px]'),title.style.display = 'none',footer.style.display='none',whyMe.style.display = 'none',why2.style.display ='none',why3.style.display ='none' ,btn.style.display = 'none' , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[70px]'),list.classList.remove('opacity-100'), title.style.display = 'block',whyMe.style.display = 'block', btn.style.display = 'flex',footer.style.display ='block',why2.style.display = 'block',why3.style.display='block')
+    }
+  </script>
+</body>
+
+</html>

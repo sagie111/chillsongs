@@ -1,0 +1,20 @@
+
+body {
+    background-color: #363636;
+} 
+.center {
+
+    width: min(calc(80% -2rem), 60rem);
+    margin-inline: auto;
+    margin-top: 200px;
+
+    text-align: center;
+}
+
+a {
+    font-size: 4rem;
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-color: rgb(155, 0, 194);
+
+}
